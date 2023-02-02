@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://JAVA.sun.com/xml/ns/javaee" version="2.5"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<!-- DELOYING THE DEMO SERVLET -->
+	<servlet>
+
+		<servlet-name>abc</servlet-name>
+		<servlet-class> com.ty.controller.Controll</servlet-class>
+
+		<init-param>
+			<param-name>kar</param-name>
+			<param-value>14.5</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>goa</param-name>
+			<param-value>21.5</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>abc</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<context-param>
+		<param-name>GST</param-name>
+		<param-value>18</param-value>
+	</context-param>
+	<servlet>
+
+		<servlet-name>ab</servlet-name>
+		<servlet-class> com.ty.controller.EmlyerController</servlet-class>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ab</servlet-name>
+		<url-pattern>/product</url-pattern>
+	</servlet-mapping>
+</web-app>
